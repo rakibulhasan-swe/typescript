@@ -23,7 +23,7 @@ let allType: number | string | boolean | undefined | null; // i can decalre a va
 let numbers: number[] = [1, 2, 3, 4, 5];
 numbers.forEach((n) => console.log(n.toExponential(5)));
 
-// tuples - Fixed length array
+// tuples - Fixed length array - follows the order of the types
 let user: [number, string] = [1, "Saim"];
 
 // enums - object like syntax - using enums we can represents related constant data
@@ -51,3 +51,17 @@ let largeSize: Size = Size.large;
 console.log(Size);
 console.log(smallSize);
 console.log(largeSize);
+
+// objects
+const users: {
+    name: string;
+    age: number;
+    isStudent: boolean;
+    cgpa: number;
+} = {
+    name: "Rakib",
+    age: 25,
+    cgpa: 3.52,
+    isStudent: true
+};
+console.log(users);
