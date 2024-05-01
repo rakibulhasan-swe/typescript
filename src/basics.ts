@@ -17,6 +17,8 @@ anyType = "Rakib";
 anyType = 21;
 // console.log(anyType)
 
+let student: undefined = undefined;
+
 let allType: number | string | boolean | undefined | null; // i can decalre a variable using any number of types
 
 // arrays -
@@ -25,43 +27,8 @@ numbers.forEach((n) => console.log(n.toExponential(5)));
 
 // tuples - Fixed length array - follows the order of the types
 let user: [number, string] = [1, "Saim"];
+let rgb: [number, number, number];
+rgb = [0, 0, 0];
 
-// enums - object like syntax - using enums we can represents related constant data
-const small = "S";
-const large = "L";
-const medium = "M";
 
-enum Size {
-  small,
-  medium,
-  large,
-}
-/* 
-{
-    '0': 'small',
-    '1': 'medium',
-    '2': 'large',
-    small: 0,
-    medium: 1,
-    large: 2
-}
-*/
-let smallSize: Size = Size.small;
-let largeSize: Size = Size.large;
-console.log(Size);
-console.log(smallSize);
-console.log(largeSize);
-
-// objects
-const users: {
-    name: string;
-    age: number;
-    isStudent: boolean;
-    cgpa: number;
-} = {
-    name: "Rakib",
-    age: 25,
-    cgpa: 3.52,
-    isStudent: true
-};
-console.log(users);
+export {}

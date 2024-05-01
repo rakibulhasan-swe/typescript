@@ -1,3 +1,5 @@
+{
+    
 // Normal Function
 function sayHi(): void{
     console.log("Hi!! Developer...");
@@ -29,3 +31,5 @@ console.log(addThreeNum(12, 21, 23));
 
 console.log(fullName("Md. Rakibul", "Hasan"));
 
+
+}
