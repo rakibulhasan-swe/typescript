@@ -1,6 +1,6 @@
 # TypeScript
 
-### Typescript is a object oriented programming language which is built on top of JS, It is a superset of Javascript. Every valid Javascript program is a valid Typescript program. Eventually Typecsript code converted into Javascript.
+Typescript is a object oriented programming language which is built on top of JS, It is a superset of Javascript. Every valid Javascript program is a valid Typescript program. Eventually Typecsript code converted into Javascript.
 
 ## Benefits of using Typescript
 - Type safety (analyze the code as we type. which can catch errors during development and provide better tooling support in code editors.)
