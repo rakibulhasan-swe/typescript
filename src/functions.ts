@@ -32,4 +32,26 @@ console.log(addThreeNum(12, 21, 23));
 console.log(fullName("Md. Rakibul", "Hasan"));
 
 
+// type -
+type TOurFunctioon = (n1: number, n2: number) => number;
+const numberFunction: TOurFunctioon = (n1, n2) => {
+    return n1+n2;
+}
+console.log(numberFunction(211, 32));
+
+
+// spraed operator spreds all the elements
+const players: string [] = ["CR7", "MESSI", "NEYMAR", "HAZARD", "RODRYGO", "DE BRUYNE"];
+const club = {
+    ...players
+}
+
+console.log(club);
+
+// rest operator will give a array with the elemets
+const [a, , c, d, ...rest] = players;
+console.log(rest);
+
+
+
 }

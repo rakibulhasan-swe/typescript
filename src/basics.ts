@@ -5,6 +5,8 @@ console.log("Started My Typescript Journey");
 const age: number = 10;
 console.log(age);
 
+// const bigInteger: bigint = 0n;
+
 let myName: string = "Md. Rakibul Hasan";
 // myName = 112; // number is not assignable to a string
 console.log(myName);

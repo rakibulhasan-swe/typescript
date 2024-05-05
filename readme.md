@@ -13,6 +13,7 @@ Typescript is a object oriented programming language which is built on top of JS
 - Compilation/Transpilation. (Browsers dont understand TS code. So it transpiled into JS code)
 - Writing more code. (Type complexities. Have to write more code).
 - Limited library support.
+- Not recomended for small projects.
 
 ## Data Types in TS
 - Number

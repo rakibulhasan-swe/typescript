@@ -1,7 +1,6 @@
 
 // inheritance -
-
-class Student {
+class Person {
     name: string;
     age: string;
     email: string;
@@ -10,6 +9,13 @@ class Student {
         this.name = name;
         this.age = age;
         this.email = email;
+    }
+}
+
+class Student extends Person{
+    
+    constructor (name: string, age: string, email: string) {
+        super(name, age, email);
     }
 }
 
