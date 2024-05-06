@@ -50,7 +50,11 @@ loggin = 112;
 login = "Typescript";
 ```
 - unknown (I do not know the type but will know the type in runtime)
-- never
+- never (Infinite loop. it will never end)
 - enum
 - tuple
 - union
+```ts
+let loggin: true | false
+console.log(loggin);
+```
