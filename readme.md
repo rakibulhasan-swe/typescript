@@ -58,3 +58,68 @@ login = "Typescript";
 let loggin: true | false
 console.log(loggin);
 ```
+### Union types more specifically can represent several types at a time.
+Lets see the exampls:
+```ts
+type User = {
+  name: string;
+  id: number;
+};
+
+type Admin = {
+  username: string;
+  user_id: number;
+};
+
+type AllUser = User | Admin;
+
+const user: AllUser = {
+  id: 231,
+  name: "Rakib",
+};
+```
+
+we can see the user did not giving any error as I am getting only the properties of type User. It means I can take either one of the type. I can choose User type or I can choose Admin type or I can choose both It will not give me an error.
+
+Whereas for for intersection I have to take all the properties that are defined. If I do not take then I will get error.
+
+### Intersection types combines multiple types into one.
+Example:
+```ts
+type User = {
+  name: string;
+  id: number;
+};
+
+type Admin = {
+  username: string;
+  user_id: number;
+};
+
+type AllUser = User & Admin;
+
+const user: AllUser = {
+  id: 231,
+  name: "Rakib",
+  username: "Hasan",
+  user_id: 34,
+};
+```
+
+I have to initialize the object like this. Basically I have to take all the property that are defined in type User and Admin. This is intersection type.
+
+Another Example:
+Suppose I am getting id from database but I do not know the types. Maximum times It either can be a number type of string type. But the problem is I can declare only one types to a variable. It can be solved by using any type. But it is not recomended Because we will loose type safety.
+
+For solving this problem here comes union type.
+
+```ts
+function getDbId(id: number | string): void {
+  console.log(`Db id is ${id}`);
+}
+
+getDbId("23");
+getDbId(43);
+```
+
+See It can take either string or number and the problem is solved. It will not give me any error. 
